@@ -20,6 +20,8 @@ body a {
   -webkit-box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
   height: 68px;
+  z-index: 500;
+  position: relative;
 }
 
 .wrapper {
@@ -73,8 +75,94 @@ body a {
   letter-spacing: 0.2em;
 }
 
+/* search-box */
 .search-box {
-  display: none;
+  width: 1352px;
+  margin: 0 auto;
+  text-align: right;
+  position: relative;
+  top: 0;
+  left: -220px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.search-box input {
+  position: absolute;
+  width: 296px;
+  height: 48px;
+  background: #FFFFFA;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 0px 0px 15px 15px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: 0;
+}
+
+/* search and close buttons */
+.nav-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*  .active {
+        .search-btn {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-8px);
+        }
+
+        .close-btn {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+    }    */
+}
+
+.nav-btn-container img {
+  position: absolute;
+}
+
+.nav-btn-container .close-btn {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.nav-btn-container .search-btn {
+  pointer-events: auto;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.nav-btn-container.active .close-btn {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.nav-btn-container.active .search-btn {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
 }
 
 /* main section */
