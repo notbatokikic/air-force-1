@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+    a {
+        text-decoration: none;
+        list-style: none;
+        color: #071E3D;
+    }
+}
+
+/* navigation-bar */ 
+
+.nav-container {
+    background: #FFFFFA;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    height: 68px;
+}
+
+
+.wrapper {
+    max-width: 1352px; 
+    margin: 0 auto;
+    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 68px;
+    }
+
+    nav ul {
+        display: flex; 
+        list-style-type: none;
+        color: #071E3D;
+    }
+
+    .logo {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 48px;
+        color: #071E3D;
+    }
+
+    .nav-items {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        gap: 90px;
+        align-items: center;
+
+        li a {
+            letter-spacing: 0.2em;
+        }
+    }
+}
+
+.search-box {
+    display: none;
+}
+
+
+/* main section */
+
+
+.header-container {
+    background: rgba(216, 203, 203, 0.692) url('../images/BG\ shape.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: calc(100vh - 68px);
+    display: flex;
+    align-items: center;
+
+    .wrapper {
+        width: 1352px;
+        margin: 0 auto;
+    }
+
+    header {
+        display: flex; 
+        justify-content: space-around;
+        align-items: center;
+        color: #071E3D;
+
+
+        .hero-content {
+            margin-bottom: 10em;
+            h1 {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 56px;
+                line-height: 72px;
+                margin-bottom: 1em;
+                
+            }
+
+            p {
+                font-family: "Roboto", sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 48px;
+                margin-bottom: 2.5em;
+                width: 430px;
+            }
+
+            a {
+                padding: 15px 30px;
+                background-color: rgba(87, 75, 144, 1);
+                border-radius: 15px;
+                color: white;
+                letter-spacing: 0.25em;
+                filter: drop-shadow(4px 8px 8px rgba(0, 0, 0, 0.5));
+            }
+
+            a:hover {
+                background-color: rgba(158, 87, 157, 1); 
+            }
+        
+        }
+    
+
+        .hero-image {
+            position: relative;
+
+            .photo-bg {
+                position: absolute;
+                width: 500px;
+                height: 500px;
+                left: 4px;
+                top: 1px;
+                background: rgba(252, 133, 174, 0.74);
+                border-radius: 15px;
+                transform: rotate(-7.26deg);
+            }
+        }
+
+        .hero-image img{
+            transition: 300ms;
+            position: relative;
+            z-index: 100;
+
+        }
+
+        .hero-image img:hover {
+            transform: rotate(-7.26deg);
+    }
+
+    }
+}
+
+
+
