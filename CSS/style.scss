@@ -74,16 +74,14 @@ body {
     text-align: right;
     position: relative;
     top: 0;
-    left: -220px;
-    z-index: 101;
-
+    left: 1px;
     transition: 300ms;
+    
 
     input {
-        position: absolute;
         width: 296px;
         height: 48px;
-
+        position: absolute;
         background: #FFFFFA;
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
         border-radius: 0px 0px 15px 15px;
@@ -95,15 +93,16 @@ body {
         letter-spacing: 0.1em;
         align-items: center;
         text-align: center;
-        border: 0;
     }
 }
 
 .search-box.active {
-    top: 72px;
+    top: 200px;
+    right: 200px;
 }
 
-/* search and close buttons */ 
+
+  /* search and close buttons */ 
 
 .nav-btn-container {
     display: flex;
@@ -130,14 +129,14 @@ body {
 .nav-btn-container.active .close-btn {
     opacity: 1;
     pointer-events: auto;
-    transform: translateY(0);
 }
 
 .nav-btn-container.active .search-btn {
     opacity: 0;
         pointer-events: none;
-        transform: translateY(-8px);
-}
+} 
+
+
  
 /* main section */
 
