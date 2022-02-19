@@ -69,100 +69,46 @@ body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  letter-spacing: 0.2rem;
 }
 
-.wrapper .nav-items li a {
-  letter-spacing: 0.2em;
-}
-
-/* search-box */
-.search-box {
-  width: 1352px;
-  margin: 0 auto;
-  text-align: right;
-  position: relative;
-  top: 0;
-  left: -220px;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-.search-box input {
-  position: absolute;
-  width: 296px;
-  height: 48px;
-  background: #FFFFFA;
-  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-  border-radius: 0px 0px 15px 15px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.1em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.wrapper .nav-items input {
+  background-color: rgba(158, 87, 157, 0.8);
+  border: none;
+  border-radius: 15px;
   text-align: center;
-  border: 0;
+  padding: 8px 20px;
+  -webkit-filter: drop-shadow(4px 8px 8px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(4px 8px 8px rgba(0, 0, 0, 0.5));
+  color: white;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.2rem;
+  outline-color: #071E3D;
+  outline-width: 3px;
 }
 
-/* search and close buttons */
-.nav-btn-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /*  .active {
-        .search-btn {
-        opacity: 0;
-        pointer-events: none;
-        transform: translateY(-8px);
-        }
-
-        .close-btn {
-            opacity: 1;
-            pointer-events: auto;
-            transform: translateY(0);
-        }
-    }    */
+.wrapper .nav-items input::-webkit-input-placeholder {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.2rem;
 }
 
-.nav-btn-container img {
-  position: absolute;
+.wrapper .nav-items input:-ms-input-placeholder {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.2rem;
 }
 
-.nav-btn-container .close-btn {
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
-  -webkit-transition: 300ms;
-  transition: 300ms;
+.wrapper .nav-items input::-ms-input-placeholder {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.2rem;
 }
 
-.nav-btn-container .search-btn {
-  pointer-events: auto;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-}
-
-.nav-btn-container.active .close-btn {
-  opacity: 1;
-  pointer-events: auto;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.nav-btn-container.active .search-btn {
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
+.wrapper .nav-items input::placeholder {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.2rem;
 }
 
 /* main section */
@@ -221,7 +167,7 @@ body a {
 
 .header-container header .hero-content a {
   padding: 15px 30px;
-  background-color: #574b90;
+  background-color: rgba(87, 75, 144, 0.8);
   border-radius: 15px;
   color: white;
   letter-spacing: 0.25em;
@@ -243,7 +189,7 @@ body a {
   height: 500px;
   left: 4px;
   top: 1px;
-  background: rgba(252, 133, 174, 0.74);
+  background: rgba(252, 133, 174, 0.8);
   border-radius: 15px;
   -webkit-transform: rotate(-7.26deg);
           transform: rotate(-7.26deg);
