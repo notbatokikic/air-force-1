@@ -208,7 +208,7 @@ body a {
 }
 
 .container {
-  background: #d8cbcbb0;
+  background: rgba(216, 203, 203, 0.692);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,8 +231,7 @@ body a {
 }
 
 .container-1 {
-  padding-top: 100px;
-  background: rgba(7, 30, 61, 0.86);
+  background: rgba(216, 203, 203, 0.692);
 }
 
 .gallery-images1 {
@@ -245,8 +244,8 @@ body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10rem;
-  padding-right: 15rem;
+  padding: 10rem;
+  background: rgba(40, 40, 40, 0.692);
 }
 
 .gallery-images2 {
@@ -263,24 +262,46 @@ body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10rem;
-  padding-left: 10rem;
+  padding: 10rem;
+  background: rgba(18, 28, 115, 0.692);
 }
 
-p {
-  font-family: "Poppins", sans-serif;
-  font-size: 100px;
-  letter-spacing: 0.4rem;
-  font-weight: bold;
-  color: white;
+.gallery-images3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10rem;
+  background: rgba(18, 68, 115, 0.692);
+}
+
+.gallery-images4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10rem;
+  background: #010005;
 }
 
 img {
   border-radius: 20px;
-  border: 30px solid white;
-  -webkit-filter: drop-shadow(4px 8px 8px rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(4px 8px 8px rgba(0, 0, 0, 0.5));
+  border: rgba(7, 30, 61, 0.86);
   height: 1000px;
-  width: 720px;
+  width: 700px;
 }
 /*# sourceMappingURL=gallery.css.map */
